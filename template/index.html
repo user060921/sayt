@@ -374,7 +374,8 @@
                             <p class="lh-40 fs-20">
                                 Get in touch and discover how we can help. We aim to be in touch
                             </p>
-                            <form class="form px-3 px-lg-5 py-3 brr-20" action="">
+                            <form method="post" class="form px-3 px-lg-5 py-3 brr-20">
+                                {% csrf_token %}
                                 <input class="form-control mt-3 brr-50 py-3" name="fullname" type="text" placeholder="Enter your name">
                                 <input class="form-control mt-3 brr-50 py-3" name="email" type="text" placeholder="Enter a valid email address">
                                 <textarea class="form-control mt-3 brr-20 py-3" name="subject" rows="4"  placeholder="Enter your message"></textarea>
